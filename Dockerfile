@@ -1,3 +1,3 @@
-FROM alpine:3.14
+FROM nixpkgs/nix
 
 CMD echo start
