@@ -1,3 +1,3 @@
 FROM nixos/nix
 
-RUN echo 123
+CMD nix-shell --run 'node --version'
