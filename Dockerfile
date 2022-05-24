@@ -1,3 +1,16 @@
+# TODO: why no stdout of cmd?
+# FROM nixos/nix
 FROM nixpkgs/nix
 
-CMD echo start2 && nix --version && nix-shell --run 'echo start3 && node --version'
+# COPY shell.nix shell.nix
+# TODO: install deps so their cached in image
+
+# TODO: how to get files into the image?
+# TODO: volume
+
+VOLUME /opt/webapp
+WORKDIR /opt/webapp
+
+# TODO: env vars?
+
+CMD nix-shell --run 'ls && node server.js'
