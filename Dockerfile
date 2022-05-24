@@ -8,9 +8,6 @@ FROM nixpkgs/nix
 # TODO: how to get files into the image?
 # TODO: volume
 
-VOLUME /opt/webapp
-WORKDIR /opt/webapp
-
 # TODO: env vars?
 
 CMD nix-shell --run 'ls && node server.js'
