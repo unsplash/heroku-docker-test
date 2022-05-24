@@ -4,8 +4,8 @@ FROM nixpkgs/nix
 
 COPY shell.nix shell.nix
 COPY dist dist
-COPY node_modules node_modules
-COPY target-tsc-build target-tsc-build
+# COPY node_modules node_modules
+# COPY target-tsc-build target-tsc-build
 
 # Cache deps
 # Better for rollbacks, deps are part of image
