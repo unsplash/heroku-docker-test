@@ -2,4 +2,4 @@ build:
     docker:
         web: Dockerfile
 run:
-    web: nix-shell --run 'node --version'
+    web: echo 123
