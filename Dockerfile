@@ -14,3 +14,6 @@ RUN nix-shell --run 'echo yay'
 # TODO: env vars?
 
 CMD nix-shell --run 'ls && node dist/server.js'
+
+# TODO: doc that we don't need to expose port, just use $PORT
+# https://help.heroku.com/PPBPA231/how-do-i-use-the-port-environment-variable-in-container-based-apps
