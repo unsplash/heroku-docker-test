@@ -2,6 +2,6 @@ FROM nixos/nix
 
 COPY shell.nix shell.nix
 
-RUN nix-shell --run 'echo start && node --version'
+RUN echo start0 && nix --version && nix-shell --run 'echo start1 && node --version'
 
-CMD nix-shell --run 'echo start && node --version'
+CMD echo start2 && nix --version && nix-shell --run 'echo start3 && node --version'
